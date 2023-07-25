@@ -11,8 +11,8 @@ import numpy as np
 import os
 
 
-os.environ['DATABRICKS_HOST'] = "https://dbc-ecf08c36-d508.cloud.databricks.com/"
-os.environ['DATABRICKS_TOKEN'] = "dapif21d8059c1d128d1ef3f836b7f8799db"
+os.environ['DATABRICKS_HOST'] = "DB_URL"
+os.environ['DATABRICKS_TOKEN'] = "DB_TOKEN"
 
 w = WorkspaceClient(
   host  = os.environ.get('DATABRICKS_HOST'),
